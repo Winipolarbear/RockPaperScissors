@@ -1,0 +1,55 @@
+.game-start-container {
+  position: relative;
+  margin-top: 7rem;
+  min-height: 11rem;
+  min-width: 18rem;
+  max-width: 17rem;
+  background-image: url(../images/bg-triangle.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-container {
+  position: absolute;
+  background: lightgoldenrodyellow;
+  height: 7rem;
+  width: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 18px solid;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.rock-icon-container {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -1rem;
+  border-color: #ace4b3;
+  box-shadow: inset 0px 5px 6px grey, 0px 8px darkseagreen;
+}
+
+.paper-icon-container {
+  top: -3rem;
+  border-color: #d5b2e4;
+  box-shadow: inset 0px 5px 6px grey, 0px 8px mediumpurple;
+}
+
+.scissors-icon-container {
+  right: 0;
+  top: -3rem;
+  border-color: #f9dd8e;
+  box-shadow: inset 0 5px 6px grey, 0 8px #a46e0a;
+}
+
+@media (hover) {
+  .icon-container:hover {
+    transform: scale(1.1);
+  }
+  .rock-icon-container:hover {
+    transform: translateX(-50%) scale(1.1);
+  }
+}

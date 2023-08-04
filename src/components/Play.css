@@ -1,0 +1,89 @@
+.game-result-container {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+  text-transform: uppercase;
+  min-height: 23rem;
+}
+
+.game-result-container .icon-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: none;
+  margin: 0 auto;
+}
+
+.player-container,
+.computer-container {
+  min-width: 10rem;
+}
+
+.picked-choice-text {
+  font-weight: 500;
+}
+
+.winner-rock {
+  box-shadow: inset 0 5px 6px grey, 0px 8px darkseagreen,
+    0 0 0 30px hsl(0deg 0% 100% / 7%), 0 0 0 80px hsl(0deg 0% 100% / 5%),
+    0 0 0 100px hsl(0deg 0% 100% / 3%);
+}
+.winner-paper {
+  box-shadow: inset 0 5px 6px grey, 0px 8px mediumpurple,
+    0 0 0 30px hsl(0deg 0% 100% / 7%), 0 0 0 80px hsl(0deg 0% 100% / 5%),
+    0 0 0 100px hsl(0deg 0% 100% / 3%);
+}
+.winner-scissors {
+  box-shadow: inset 0 5px 6px grey, 0 8px #a46e0a,
+    0 0 0 30px hsl(0deg 0% 100% / 7%), 0 0 0 80px hsl(0deg 0% 100% / 5%),
+    0 0 0 100px hsl(0deg 0% 100% / 3%);
+}
+
+.counter {
+  height: 7rem;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #f39fd5;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 10rem;
+  margin-top: 2rem;
+  font-weight: 700;
+  font-size: 3.7rem;
+  letter-spacing: 1px;
+  width: 100%;
+  min-height: 10rem;
+}
+
+.play-again-btn {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: 650;
+  letter-spacing: 0.3px;
+  min-width: 13rem;
+}
+
+@media (hover) {
+  .play-again-btn:hover {
+    color: yellowgreen;
+  }
+}

@@ -1,0 +1,21 @@
+.rules-btn {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #e9b765;
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+  border: 1px solid rgb(223, 226, 255);
+  letter-spacing: 2.5px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+@media (hover) {
+  .rules-btn:hover {
+    color: #e9b765;
+    background-color: rgb(243, 243, 243);
+  }
+}

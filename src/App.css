@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Chalkduster";
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Trebuchet MS";
+  color: #db5991;
+}
+
+.App {
+  position: relative;
+  height: 80vh;
+  min-height: 40rem;
+  max-height: 42rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
